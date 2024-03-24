@@ -1,0 +1,24 @@
+.player-selection-container {}
+
+.striker-container {
+    align-items: flex-end;
+}
+
+.striker-container div:nth-of-type(2) {
+    align-self: center;
+}
+
+.striker-container .striker-box {
+    position: relative;
+
+    /* width: 5rem; */
+    /* height: 5rem; */
+    border-radius: 16px;
+}
+
+.defender-container div:not(:first-of-type):not(:last-of-type) {
+    position: relative;
+    /* align-self: flex-end; */
+    /* margin-top: 32px; */
+    top: 32px;
+}

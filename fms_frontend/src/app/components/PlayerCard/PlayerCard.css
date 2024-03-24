@@ -1,0 +1,352 @@
+/* body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #997521;
+    background: radial-gradient(ellipse at center, #45350f 0%, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  a {
+    position: absolute;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    left: -1px;
+    right: 0;
+    outline: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 268px;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 2;
+    border: 2px solid #e1c072;
+    background: transparent;
+    color: #45350f;
+    font-weight: 700;
+    transform: scale(1);
+    background: radial-gradient(ellipse at center, #d8ad48 0%, #c3962a);
+  }
+  a:hover {
+    margin-top: -5px;
+  }
+  a.active {
+    transform: rotateX(-180deg);
+    opacity: 0;
+  } */
+#card {
+  position: relative;
+  color: #725b16;
+  width: 270px;
+  height: 430px;
+  background: #ddd;
+  margin: auto;
+  clip-path: url("#svgPath");
+  display: block;
+  opacity: 0;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: rotateY(-180deg);
+  transition-delay: 0.1s;
+}
+
+#card #card-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #aaa;
+  height: 100%;
+  width: 100%;
+}
+
+#card #card-inner #card-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54%;
+  background: #e1c072;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fdeaa7 0%, #d8ad48 100%);
+}
+
+#card #card-inner #card-top .backfont {
+  position: absolute;
+  bottom: -22px;
+  line-height: 1;
+  font-size: 118px;
+  left: 0;
+  letter-spacing: -5px;
+  opacity: 0;
+  font-weight: 700;
+  font-style: italic;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+#card #card-inner #card-top .image {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  z-index: 2;
+  height: 75%;
+  width: 70%;
+  /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/214624/Ronaldo.png'); */
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transition: 0.5s all ease-out 3s;
+}
+
+#card #card-inner #card-top .info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  height: 75%;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#card #card-inner #card-top .info div {
+  position: relative;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-size: 20px;
+  opacity: 0;
+  top: 20px;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+#card #card-inner #card-top .info div.value {
+  font-size: 40px;
+}
+
+#card #card-inner #card-top .info div.position {
+  transition-delay: 1.25s;
+}
+
+#card #card-inner #card-top .info div.country {
+  transition-delay: 1.5s;
+}
+
+#card #card-inner #card-top .info div.club {
+  transition-delay: 1.75s;
+}
+
+#card #card-inner #card-top .info div.position,
+#card #card-inner #card-top .info div.country {
+  padding-bottom: 5px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  border-bottom: 2px solid rgba(253, 234, 167, 0.9);
+}
+
+#card #card-inner #card-top .info div.country,
+#card #card-inner #card-top .info div.club {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 25px;
+  margin: 5px auto;
+}
+
+#card #card-inner #card-top .info div.country div,
+#card #card-inner #card-top .info div.club div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/214624/portugal.png'); */
+}
+
+#card #card-inner #card-top .info div.country.club,
+#card #card-inner #card-top .info div.club.club {
+  height: 60px;
+}
+
+#card #card-inner #card-top .info div.country.club div,
+#card #card-inner #card-top .info div.club.club div {
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/214624/Juventus_Logo.png'); */
+}
+
+#card #card-inner #card-bottom {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 46%;
+  background: #fdeaa7;
+  background: linear-gradient(135deg, #fdeaa7 0%, #fcde75 100%);
+}
+
+#card #card-inner #card-bottom:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 3px;
+  background: #fef2ca;
+}
+
+#card #card-inner #card-bottom .name {
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0;
+  top: -5px;
+  position: relative;
+  transition: 0.5s all ease-out 3.2s;
+  margin: 6px 0;
+}
+
+#card #card-inner #card-bottom .card-stats {
+  position: relative;
+  margin: 0 40px;
+  padding-top: 10px;
+  border-top: 0px solid #fdeaa7;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+#card #card-inner #card-bottom .card-stats:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 4px;
+  width: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  background: #fdeaa7;
+}
+
+#card #card-inner #card-bottom .card-stats:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  margin: 5% auto;
+  height: 0%;
+  width: 4px;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  background: #fdeaa7;
+}
+
+#card #card-inner #card-bottom .card-stats div {
+  width: 49%;
+  vertical-align: top;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#card #card-inner #card-bottom .card-stats div:last-child ul {
+  margin-left: 24px;
+}
+
+#card #card-inner #card-bottom .card-stats ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#card #card-inner #card-bottom .card-stats ul li {
+  margin: 0;
+  position: relative;
+  padding: 0;
+  display: block;
+  margin-bottom: 5px;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  opacity: 0;
+  left: 20px;
+}
+
+#card #card-inner #card-bottom .card-stats ul li:nth-child(2) {
+  transition-delay: 2.2s;
+}
+
+#card #card-inner #card-bottom .card-stats ul li:nth-child(3) {
+  transition-delay: 2.4s;
+}
+
+#card #card-inner #card-bottom .card-stats ul li:nth-child(4) {
+  transition-delay: 2.6s;
+}
+
+#card #card-inner #card-bottom .card-stats ul li:nth-child(5) {
+  transition-delay: 2.8s;
+}
+
+#card #card-inner #card-bottom .card-stats ul li:nth-child(6) {
+  transition-delay: 3s;
+}
+
+#card #card-inner #card-bottom .card-stats ul li span {
+  position: relative;
+  display: inline-block;
+}
+
+#card #card-inner #card-bottom .card-stats ul li span:first-child {
+  font-weight: 700;
+  width: 30px;
+  text-align: left;
+}
+
+#card.active {
+  display: block;
+  cursor: pointer;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+#card.active #card-inner #card-top .image {
+  right: 20px;
+  bottom: -20px;
+  opacity: 1;
+}
+
+#card.active #card-inner #card-top .backfont {
+  opacity: 0.1;
+  left: -8px;
+}
+
+#card.active #card-inner #card-top .info div {
+  opacity: 1;
+  top: 0;
+}
+
+#card.active #card-inner #card-bottom .card-stats {
+  border-top: 4px solid #fdeaa7;
+}
+
+#card.active #card-inner #card-bottom .card-stats:after {
+  width: 25%;
+}
+
+#card.active #card-inner #card-bottom .card-stats:before {
+  height: 90%;
+}
+
+#card.active #card-inner #card-bottom .card-stats ul li {
+  opacity: 1;
+  left: 0;
+}
+
+#card.active #card-inner #card-bottom .name {
+  opacity: 1;
+  top: 0;
+}

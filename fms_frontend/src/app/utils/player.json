@@ -1,0 +1,1396 @@
+[
+    {
+        "name": "Manuel Neuer",
+        "position": "Goalkeeper",
+        "overall_rating": 91,
+        "nationality": "Germany",
+        "weight": "203 lbs",
+        "height": "6'4\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 90,
+            "handling": 88,
+            "kicking": 95,
+            "reflexes": 92,
+            "speed": 70,
+            "positioning": 93
+        }
+    },
+    {
+        "name": "Virgil van Dijk",
+        "position": "Centre-Back",
+        "overall_rating": 92,
+        "nationality": "Netherlands",
+        "weight": "203 lbs",
+        "height": "6'4\"",
+        "skill_moves": 2,
+        "attributes": {
+            "pace": 77,
+            "shooting": 60,
+            "passing": 78,
+            "dribbling": 70,
+            "defending": 92,
+            "physical": 92
+        }
+    },
+    {
+        "name": "Kevin De Bruyne",
+        "position": "Central Midfielder",
+        "overall_rating": 93,
+        "nationality": "Belgium",
+        "weight": "154 lbs",
+        "height": "5'11\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 85,
+            "shooting": 87,
+            "passing": 94,
+            "dribbling": 89,
+            "defending": 70,
+            "physical": 80
+        }
+    },
+    {
+        "name": "Sergio Ramos",
+        "position": "Centre-Back",
+        "overall_rating": 90,
+        "nationality": "Spain",
+        "weight": "181 lbs",
+        "height": "6'0\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 80,
+            "shooting": 70,
+            "passing": 80,
+            "dribbling": 75,
+            "defending": 95,
+            "physical": 90
+        }
+    },
+    {
+        "name": "Robert Lewandowski",
+        "position": "Striker",
+        "overall_rating": 93,
+        "nationality": "Poland",
+        "weight": "176 lbs",
+        "height": "6'1\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 82,
+            "shooting": 95,
+            "passing": 80,
+            "dribbling": 85,
+            "defending": 50,
+            "physical": 88
+        }
+    },
+    {
+        "name": "Bruno Fernandes",
+        "position": "Attacking Midfielder",
+        "overall_rating": 89,
+        "nationality": "Portugal",
+        "weight": "152 lbs",
+        "height": "5'10\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 83,
+            "shooting": 89,
+            "passing": 92,
+            "dribbling": 87,
+            "defending": 70,
+            "physical": 78
+        }
+    },
+    {
+        "name": "N'Golo Kanté",
+        "position": "Central Midfielder",
+        "overall_rating": 91,
+        "nationality": "France",
+        "weight": "150 lbs",
+        "height": "5'6\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 82,
+            "shooting": 70,
+            "passing": 85,
+            "dribbling": 85,
+            "defending": 92,
+            "physical": 90
+        }
+    },
+    {
+        "name": "Mohamed Salah",
+        "position": "Right Winger",
+        "overall_rating": 92,
+        "nationality": "Egypt",
+        "weight": "157 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 94,
+            "shooting": 90,
+            "passing": 82,
+            "dribbling": 91,
+            "defending": 40,
+            "physical": 78
+        }
+    },
+    {
+        "name": "Trent Alexander-Arnold",
+        "position": "Right-Back",
+        "overall_rating": 88,
+        "nationality": "England",
+        "weight": "168 lbs",
+        "height": "5'9\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 84,
+            "shooting": 75,
+            "passing": 86,
+            "dribbling": 82,
+            "defending": 85,
+            "physical": 81
+        }
+    },
+    {
+        "name": "Kylian Mbappé",
+        "position": "Striker",
+        "overall_rating": 94,
+        "nationality": "France",
+        "weight": "161 lbs",
+        "height": "5'10\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 96,
+            "shooting": 88,
+            "passing": 83,
+            "dribbling": 95,
+            "defending": 45,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Luka Modric",
+        "position": "Central Midfielder",
+        "overall_rating": 91,
+        "nationality": "Croatia",
+        "weight": "154 lbs",
+        "height": "5'8\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 75,
+            "shooting": 82,
+            "passing": 94,
+            "dribbling": 91,
+            "defending": 70,
+            "physical": 72
+        }
+    },
+    {
+        "name": "Raheem Sterling",
+        "position": "Left Winger",
+        "overall_rating": 88,
+        "nationality": "England",
+        "weight": "152 lbs",
+        "height": "5'7\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 93,
+            "shooting": 84,
+            "passing": 82,
+            "dribbling": 90,
+            "defending": 40,
+            "physical": 80
+        }
+    },
+    {
+        "name": "Gianluigi Buffon",
+        "position": "Goalkeeper",
+        "overall_rating": 90,
+        "nationality": "Italy",
+        "weight": "194 lbs",
+        "height": "6'4\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 92,
+            "handling": 89,
+            "kicking": 85,
+            "reflexes": 91,
+            "speed": 68,
+            "positioning": 93
+        }
+    },
+    {
+        "name": "Marcelo",
+        "position": "Left-Back",
+        "overall_rating": 88,
+        "nationality": "Brazil",
+        "weight": "176 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 85,
+            "shooting": 78,
+            "passing": 84,
+            "dribbling": 88,
+            "defending": 85,
+            "physical": 80
+        }
+    },
+    {
+        "name": "Sergio Busquets",
+        "position": "Defensive Midfielder",
+        "overall_rating": 89,
+        "nationality": "Spain",
+        "weight": "168 lbs",
+        "height": "6'2\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 62,
+            "shooting": 70,
+            "passing": 90,
+            "dribbling": 80,
+            "defending": 88,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Harry Kane",
+        "position": "Striker",
+        "overall_rating": 91,
+        "nationality": "England",
+        "weight": "188 lbs",
+        "height": "6'2\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 78,
+            "shooting": 92,
+            "passing": 81,
+            "dribbling": 83,
+            "defending": 50,
+            "physical": 87
+        }
+    },
+    {
+        "name": "Paul Pogba",
+        "position": "Central Midfielder",
+        "overall_rating": 90,
+        "nationality": "France",
+        "weight": "187 lbs",
+        "height": "6'3\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 80,
+            "shooting": 85,
+            "passing": 90,
+            "dribbling": 88,
+            "defending": 80,
+            "physical": 90
+        }
+    },
+    {
+        "name": "Sadio Mané",
+        "position": "Left Winger",
+        "overall_rating": 90,
+        "nationality": "Senegal",
+        "weight": "157 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 94,
+            "shooting": 88,
+            "passing": 82,
+            "dribbling": 90,
+            "defending": 40,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Toni Kroos",
+        "position": "Central Midfielder",
+        "overall_rating": 89,
+        "nationality": "Germany",
+        "weight": "168 lbs",
+        "height": "6'0\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 70,
+            "shooting": 85,
+            "passing": 94,
+            "dribbling": 82,
+            "defending": 70,
+            "physical": 80
+        }
+    },
+    {
+        "name": "Luis Suárez",
+        "position": "Striker",
+        "overall_rating": 92,
+        "nationality": "Uruguay",
+        "weight": "182 lbs",
+        "height": "6'0\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 80,
+            "shooting": 94,
+            "passing": 82,
+            "dribbling": 88,
+            "defending": 45,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Joshua Kimmich",
+        "position": "Right-Back",
+        "overall_rating": 89,
+        "nationality": "Germany",
+        "weight": "176 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 82,
+            "shooting": 78,
+            "passing": 88,
+            "dribbling": 85,
+            "defending": 85,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Neymar Jr.",
+        "position": "Left Winger",
+        "overall_rating": 93,
+        "nationality": "Brazil",
+        "weight": "150 lbs",
+        "height": "5'9\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 92,
+            "shooting": 88,
+            "passing": 85,
+            "dribbling": 95,
+            "defending": 40,
+            "physical": 75
+        }
+    },
+    {
+        "name": "Jan Oblak",
+        "position": "Goalkeeper",
+        "overall_rating": 91,
+        "nationality": "Slovenia",
+        "weight": "192 lbs",
+        "height": "6'2\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 92,
+            "handling": 90,
+            "kicking": 78,
+            "reflexes": 92,
+            "speed": 65,
+            "positioning": 93
+        }
+    },
+    {
+        "name": "Erling Haaland",
+        "position": "Striker",
+        "overall_rating": 91,
+        "nationality": "Norway",
+        "weight": "194 lbs",
+        "height": "6'4\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 87,
+            "shooting": 92,
+            "passing": 78,
+            "dribbling": 85,
+            "defending": 45,
+            "physical": 90
+        }
+    },
+    {
+        "name": "Ederson",
+        "position": "Goalkeeper",
+        "overall_rating": 89,
+        "nationality": "Brazil",
+        "weight": "190 lbs",
+        "height": "6'2\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 88,
+            "handling": 90,
+            "kicking": 92,
+            "reflexes": 91,
+            "speed": 70,
+            "positioning": 88
+        }
+    },
+    {
+        "name": "Andrew Robertson",
+        "position": "Left-Back",
+        "overall_rating": 88,
+        "nationality": "Scotland",
+        "weight": "152 lbs",
+        "height": "5'10\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 86,
+            "shooting": 74,
+            "passing": 83,
+            "dribbling": 85,
+            "defending": 88,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Casemiro",
+        "position": "Defensive Midfielder",
+        "overall_rating": 89,
+        "nationality": "Brazil",
+        "weight": "185 lbs",
+        "height": "6'1\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 70,
+            "shooting": 75,
+            "passing": 83,
+            "dribbling": 78,
+            "defending": 90,
+            "physical": 88
+        }
+    },
+    {
+        "name": "Romelu Lukaku",
+        "position": "Striker",
+        "overall_rating": 90,
+        "nationality": "Belgium",
+        "weight": "207 lbs",
+        "height": "6'3\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 83,
+            "shooting": 91,
+            "passing": 78,
+            "dribbling": 80,
+            "defending": 45,
+            "physical": 90
+        }
+    },
+    {
+        "name": "Bruno Fernandes",
+        "position": "Attacking Midfielder",
+        "overall_rating": 89,
+        "nationality": "Portugal",
+        "weight": "152 lbs",
+        "height": "5'10\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 83,
+            "shooting": 89,
+            "passing": 92,
+            "dribbling": 87,
+            "defending": 70,
+            "physical": 78
+        }
+    },
+    {
+        "name": "Heung-Min Son",
+        "position": "Left Winger",
+        "overall_rating": 89,
+        "nationality": "South Korea",
+        "weight": "183 lbs",
+        "height": "6'0\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 90,
+            "shooting": 86,
+            "passing": 83,
+            "dribbling": 88,
+            "defending": 40,
+            "physical": 84
+        }
+    },
+    {
+        "name": "Marco Verratti",
+        "position": "Central Midfielder",
+        "overall_rating": 88,
+        "nationality": "Italy",
+        "weight": "134 lbs",
+        "height": "5'5\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 75,
+            "shooting": 75,
+            "passing": 90,
+            "dribbling": 88,
+            "defending": 80,
+            "physical": 75
+        }
+    },
+    {
+        "name": "Karim Benzema",
+        "position": "Striker",
+        "overall_rating": 91,
+        "nationality": "France",
+        "weight": "185 lbs",
+        "height": "6'1\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 83,
+            "shooting": 90,
+            "passing": 82,
+            "dribbling": 88,
+            "defending": 45,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Andrew Wijnaldum",
+        "position": "Central Midfielder",
+        "overall_rating": 87,
+        "nationality": "Netherlands",
+        "weight": "152 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 80,
+            "shooting": 80,
+            "passing": 85,
+            "dribbling": 85,
+            "defending": 82,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Gareth Bale",
+        "position": "Right Winger",
+        "overall_rating": 88,
+        "nationality": "Wales",
+        "weight": "182 lbs",
+        "height": "6'1\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 92,
+            "shooting": 87,
+            "passing": 80,
+            "dribbling": 86,
+            "defending": 45,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Keylor Navas",
+        "position": "Goalkeeper",
+        "overall_rating": 88,
+        "nationality": "Costa Rica",
+        "weight": "176 lbs",
+        "height": "6'1\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 90,
+            "handling": 89,
+            "kicking": 82,
+            "reflexes": 90,
+            "speed": 68,
+            "positioning": 89
+        }
+    },
+    {
+        "name": "Jadon Sancho",
+        "position": "Right Winger",
+        "overall_rating": 89,
+        "nationality": "England",
+        "weight": "168 lbs",
+        "height": "5'11\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 92,
+            "shooting": 85,
+            "passing": 88,
+            "dribbling": 92,
+            "defending": 40,
+            "physical": 75
+        }
+    },
+    {
+        "name": "Alisson Becker",
+        "position": "Goalkeeper",
+        "overall_rating": 90,
+        "nationality": "Brazil",
+        "weight": "194 lbs",
+        "height": "6'3\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 90,
+            "handling": 91,
+            "kicking": 85,
+            "reflexes": 92,
+            "speed": 65,
+            "positioning": 90
+        }
+    },
+    {
+        "name": "Andy Robertson",
+        "position": "Left-Back",
+        "overall_rating": 88,
+        "nationality": "Scotland",
+        "weight": "152 lbs",
+        "height": "5'10\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 87,
+            "shooting": 75,
+            "passing": 83,
+            "dribbling": 85,
+            "defending": 88,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Fabinho",
+        "position": "Defensive Midfielder",
+        "overall_rating": 89,
+        "nationality": "Brazil",
+        "weight": "179 lbs",
+        "height": "6'2\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 70,
+            "shooting": 78,
+            "passing": 85,
+            "dribbling": 80,
+            "defending": 89,
+            "physical": 86
+        }
+    },
+    {
+        "name": "Harry Kane",
+        "position": "Striker",
+        "overall_rating": 91,
+        "nationality": "England",
+        "weight": "188 lbs",
+        "height": "6'2\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 77,
+            "shooting": 92,
+            "passing": 82,
+            "dribbling": 81,
+            "defending": 50,
+            "physical": 87
+        }
+    },
+    {
+        "name": "Kai Havertz",
+        "position": "Attacking Midfielder",
+        "overall_rating": 89,
+        "nationality": "Germany",
+        "weight": "181 lbs",
+        "height": "6'2\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 80,
+            "shooting": 85,
+            "passing": 86,
+            "dribbling": 88,
+            "defending": 70,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Raheem Sterling",
+        "position": "Left Winger",
+        "overall_rating": 89,
+        "nationality": "England",
+        "weight": "152 lbs",
+        "height": "5'7\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 93,
+            "shooting": 85,
+            "passing": 83,
+            "dribbling": 91,
+            "defending": 40,
+            "physical": 78
+        }
+    },
+    {
+        "name": "N'Golo Kanté",
+        "position": "Central Midfielder",
+        "overall_rating": 90,
+        "nationality": "France",
+        "weight": "150 lbs",
+        "height": "5'6\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 80,
+            "shooting": 70,
+            "passing": 85,
+            "dribbling": 86,
+            "defending": 92,
+            "physical": 88
+        }
+    },
+    {
+        "name": "Cristiano Ronaldo",
+        "position": "Striker",
+        "overall_rating": 93,
+        "nationality": "Portugal",
+        "weight": "183 lbs",
+        "height": "6'2\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 91,
+            "shooting": 95,
+            "passing": 81,
+            "dribbling": 89,
+            "defending": 45,
+            "physical": 89
+        }
+    },
+    {
+        "name": "Joshua Kimmich",
+        "position": "Right-Back",
+        "overall_rating": 90,
+        "nationality": "Germany",
+        "weight": "168 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 82,
+            "shooting": 80,
+            "passing": 90,
+            "dribbling": 86,
+            "defending": 88,
+            "physical": 84
+        }
+    },
+    {
+        "name": "Lionel Messi",
+        "position": "Right Winger",
+        "overall_rating": 94,
+        "nationality": "Argentina",
+        "weight": "159 lbs",
+        "height": "5'7\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 87,
+            "shooting": 95,
+            "passing": 92,
+            "dribbling": 96,
+            "defending": 40,
+            "physical": 75
+        }
+    },
+    {
+        "name": "Marc-André ter Stegen",
+        "position": "Goalkeeper",
+        "overall_rating": 90,
+        "nationality": "Germany",
+        "weight": "187 lbs",
+        "height": "6'2\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 90,
+            "handling": 90,
+            "kicking": 85,
+            "reflexes": 92,
+            "speed": 65,
+            "positioning": 90
+        }
+    },
+    {
+        "name": "Luis Alberto",
+        "position": "Attacking Midfielder",
+        "overall_rating": 88,
+        "nationality": "Spain",
+        "weight": "159 lbs",
+        "height": "6'1\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 80,
+            "shooting": 86,
+            "passing": 88,
+            "dribbling": 90,
+            "defending": 60,
+            "physical": 78
+        }
+    },
+    {
+        "name": "David de Gea",
+        "position": "Goalkeeper",
+        "overall_rating": 89,
+        "nationality": "Spain",
+        "weight": "181 lbs",
+        "height": "6'4\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 92,
+            "handling": 90,
+            "kicking": 85,
+            "reflexes": 92,
+            "speed": 68,
+            "positioning": 92
+        }
+    },
+    {
+        "name": "Jordi Alba",
+        "position": "Left-Back",
+        "overall_rating": 87,
+        "nationality": "Spain",
+        "weight": "150 lbs",
+        "height": "5'7\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 90,
+            "shooting": 74,
+            "passing": 82,
+            "dribbling": 85,
+            "defending": 84,
+            "physical": 80
+        }
+    },
+    {
+        "name": "Frenkie de Jong",
+        "position": "Central Midfielder",
+        "overall_rating": 88,
+        "nationality": "Netherlands",
+        "weight": "154 lbs",
+        "height": "5'11\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 82,
+            "shooting": 78,
+            "passing": 88,
+            "dribbling": 89,
+            "defending": 85,
+            "physical": 80
+        }
+    },
+    {
+        "name": "Thibaut Courtois",
+        "position": "Goalkeeper",
+        "overall_rating": 89,
+        "nationality": "Belgium",
+        "weight": "201 lbs",
+        "height": "6'6\"",
+        "skill_moves": 1,
+        "attributes": {
+            "diving": 88,
+            "handling": 90,
+            "kicking": 82,
+            "reflexes": 91,
+            "speed": 60,
+            "positioning": 92
+        }
+    },
+    {
+        "name": "Rodri",
+        "position": "Defensive Midfielder",
+        "overall_rating": 86,
+        "nationality": "Spain",
+        "weight": "168 lbs",
+        "height": "6'3\"",
+        "skill_moves": 2,
+        "attributes": {
+            "pace": 65,
+            "shooting": 70,
+            "passing": 86,
+            "dribbling": 78,
+            "defending": 88,
+            "physical": 84
+        }
+    },
+    {
+        "name": "Roberto Firmino",
+        "position": "Forward",
+        "overall_rating": 88,
+        "nationality": "Brazil",
+        "weight": "157 lbs",
+        "height": "5'11\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 80,
+            "shooting": 85,
+            "passing": 86,
+            "dribbling": 87,
+            "defending": 60,
+            "physical": 81
+        }
+    },
+    {
+        "name": "Kalidou Koulibaly",
+        "position": "Centre-Back",
+        "overall_rating": 89,
+        "nationality": "Senegal",
+        "weight": "207 lbs",
+        "height": "6'4\"",
+        "skill_moves": 2,
+        "attributes": {
+            "pace": 78,
+            "shooting": 60,
+            "passing": 75,
+            "dribbling": 70,
+            "defending": 91,
+            "physical": 91
+        }
+    },
+    {
+        "name": "David Alaba",
+        "position": "Left-Back",
+        "overall_rating": 87,
+        "nationality": "Austria",
+        "weight": "174 lbs",
+        "height": "5'11\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 84,
+            "shooting": 78,
+            "passing": 86,
+            "dribbling": 83,
+            "defending": 87,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Miralem Pjanic",
+        "position": "Central Midfielder",
+        "overall_rating": 86,
+        "nationality": "Bosnia and Herzegovina",
+        "weight": "154 lbs",
+        "height": "5'10\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 68,
+            "shooting": 82,
+            "passing": 88,
+            "dribbling": 85,
+            "defending": 70,
+            "physical": 75
+        }
+    },
+    {
+        "name": "Leroy Sané",
+        "position": "Left Winger",
+        "overall_rating": 87,
+        "nationality": "Germany",
+        "weight": "165 lbs",
+        "height": "6'0\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 92,
+            "shooting": 83,
+            "passing": 81,
+            "dribbling": 88,
+            "defending": 45,
+            "physical": 78
+        }
+    },
+    {
+        "name": "Philippe Coutinho",
+        "position": "Attacking Midfielder",
+        "overall_rating": 87,
+        "nationality": "Brazil",
+        "weight": "150 lbs",
+        "height": "5'8\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 78,
+            "shooting": 85,
+            "passing": 88,
+            "dribbling": 90,
+            "defending": 45,
+            "physical": 70
+        }
+    },
+    {
+        "name": "Antoine Griezmann",
+        "position": "Forward",
+        "overall_rating": 88,
+        "nationality": "France",
+        "weight": "161 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 85,
+            "shooting": 87,
+            "passing": 84,
+            "dribbling": 88,
+            "defending": 45,
+            "physical": 76
+        }
+    },
+    {
+        "name": "Paulo Dybala",
+        "position": "Left Winger",
+        "overall_rating": 89,
+        "nationality": "Argentina",
+        "weight": "157 lbs",
+        "height": "5'10\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 87,
+            "shooting": 90,
+            "passing": 85,
+            "dribbling": 92,
+            "defending": 40,
+            "physical": 78
+        }
+    },
+    {
+        "name": "Saul Niguez",
+        "position": "Central Midfielder",
+        "overall_rating": 87,
+        "nationality": "Spain",
+        "weight": "168 lbs",
+        "height": "6'0\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 77,
+            "shooting": 82,
+            "passing": 86,
+            "dribbling": 85,
+            "defending": 86,
+            "physical": 83
+        }
+    },
+    {
+        "name": "Eden Hazard",
+        "position": "Left Winger",
+        "overall_rating": 89,
+        "nationality": "Belgium",
+        "weight": "163 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 91,
+            "shooting": 84,
+            "passing": 86,
+            "dribbling": 93,
+            "defending": 40,
+            "physical": 79
+        }
+    },
+    {
+        "name": "Joaquin Correa",
+        "position": "Left Winger",
+        "overall_rating": 86,
+        "nationality": "Argentina",
+        "weight": "172 lbs",
+        "height": "6'0\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 86,
+            "shooting": 82,
+            "passing": 78,
+            "dribbling": 88,
+            "defending": 40,
+            "physical": 81
+        }
+    },
+    {
+        "name": "Lucas Hernández",
+        "position": "Left-Back",
+        "overall_rating": 86,
+        "nationality": "France",
+        "weight": "183 lbs",
+        "height": "6'0\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 82,
+            "shooting": 65,
+            "passing": 76,
+            "dribbling": 78,
+            "defending": 87,
+            "physical": 84
+        }
+    },
+    {
+        "name": "Sergej Milinković-Savić",
+        "position": "Central Midfielder",
+        "overall_rating": 87,
+        "nationality": "Serbia",
+        "weight": "183 lbs",
+        "height": "6'3\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 77,
+            "shooting": 85,
+            "passing": 86,
+            "dribbling": 83,
+            "defending": 84,
+            "physical": 86
+        }
+    },
+    {
+        "name": "Declan Rice",
+        "position": "Defensive Midfielder",
+        "overall_rating": 86,
+        "nationality": "England",
+        "weight": "176 lbs",
+        "height": "6'2\"",
+        "skill_moves": 2,
+        "attributes": {
+            "pace": 76,
+            "shooting": 68,
+            "passing": 80,
+            "dribbling": 75,
+            "defending": 85,
+            "physical": 86
+        }
+    },
+    {
+        "name": "João Cancelo",
+        "position": "Right-Back",
+        "overall_rating": 86,
+        "nationality": "Portugal",
+        "weight": "159 lbs",
+        "height": "6'0\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 89,
+            "shooting": 73,
+            "passing": 83,
+            "dribbling": 85,
+            "defending": 82,
+            "physical": 80
+        }
+    },
+    {
+        "name": "Lucas Digne",
+        "position": "Left-Back",
+        "overall_rating": 85,
+        "nationality": "France",
+        "weight": "172 lbs",
+        "height": "5'10\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 82,
+            "shooting": 70,
+            "passing": 78,
+            "dribbling": 80,
+            "defending": 83,
+            "physical": 79
+        }
+    },
+    {
+        "name": "Nabil Fekir",
+        "position": "Attacking Midfielder",
+        "overall_rating": 86,
+        "nationality": "France",
+        "weight": "168 lbs",
+        "height": "5'8\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 80,
+            "shooting": 84,
+            "passing": 85,
+            "dribbling": 88,
+            "defending": 50,
+            "physical": 78
+        }
+    },
+    {
+        "name": "Jamie Vardy",
+        "position": "Striker",
+        "overall_rating": 88,
+        "nationality": "England",
+        "weight": "168 lbs",
+        "height": "5'10\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 91,
+            "shooting": 89,
+            "passing": 77,
+            "dribbling": 81,
+            "defending": 45,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Wilfred Ndidi",
+        "position": "Defensive Midfielder",
+        "overall_rating": 85,
+        "nationality": "Nigeria",
+        "weight": "176 lbs",
+        "height": "6'2\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 77,
+            "shooting": 65,
+            "passing": 75,
+            "dribbling": 72,
+            "defending": 87,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Marcelo Brozović",
+        "position": "Central Midfielder",
+        "overall_rating": 86,
+        "nationality": "Croatia",
+        "weight": "168 lbs",
+        "height": "6'0\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 74,
+            "shooting": 79,
+            "passing": 86,
+            "dribbling": 83,
+            "defending": 85,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Giorgio Chiellini",
+        "position": "Centre-Back",
+        "overall_rating": 89,
+        "nationality": "Italy",
+        "weight": "187 lbs",
+        "height": "6'2\"",
+        "skill_moves": 2,
+        "attributes": {
+            "pace": 75,
+            "shooting": 55,
+            "passing": 70,
+            "dribbling": 60,
+            "defending": 92,
+            "physical": 90
+        }
+    },
+    {
+        "name": "Federico Valverde",
+        "position": "Central Midfielder",
+        "overall_rating": 86,
+        "nationality": "Uruguay",
+        "weight": "172 lbs",
+        "height": "6'0\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 80,
+            "shooting": 78,
+            "passing": 82,
+            "dribbling": 85,
+            "defending": 84,
+            "physical": 82
+        }
+    },
+    {
+        "name": "Ciro Immobile",
+        "position": "Striker",
+        "overall_rating": 87,
+        "nationality": "Italy",
+        "weight": "187 lbs",
+        "height": "6'1\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 81,
+            "shooting": 90,
+            "passing": 76,
+            "dribbling": 82,
+            "defending": 40,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Thomas Partey",
+        "position": "Central Midfielder",
+        "overall_rating": 85,
+        "nationality": "Ghana",
+        "weight": "185 lbs",
+        "height": "6'1\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 78,
+            "shooting": 78,
+            "passing": 80,
+            "dribbling": 80,
+            "defending": 85,
+            "physical": 88
+        }
+    },
+    {
+        "name": "Thiago Alcântara",
+        "position": "Central Midfielder",
+        "overall_rating": 87,
+        "nationality": "Spain",
+        "weight": "154 lbs",
+        "height": "5'9\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 70,
+            "shooting": 79,
+            "passing": 90,
+            "dribbling": 89,
+            "defending": 80,
+            "physical": 75
+        }
+    },
+    {
+        "name": "Hakim Ziyech",
+        "position": "Right Winger",
+        "overall_rating": 86,
+        "nationality": "Morocco",
+        "weight": "160 lbs",
+        "height": "5'11\"",
+        "skill_moves": 4,
+        "attributes": {
+            "pace": 76,
+            "shooting": 86,
+            "passing": 88,
+            "dribbling": 86,
+            "defending": 43,
+            "physical": 72
+        }
+    },
+    {
+        "name": "Aymeric Laporte",
+        "position": "Centre-Back",
+        "overall_rating": 87,
+        "nationality": "France",
+        "weight": "187 lbs",
+        "height": "6'2\"",
+        "skill_moves": 2,
+        "attributes": {
+            "pace": 74,
+            "shooting": 58,
+            "passing": 78,
+            "dribbling": 70,
+            "defending": 88,
+            "physical": 85
+        }
+    },
+    {
+        "name": "Leon Goretzka",
+        "position": "Central Midfielder",
+        "overall_rating": 86,
+        "nationality": "Germany",
+        "weight": "183 lbs",
+        "height": "6'2\"",
+        "skill_moves": 3,
+        "attributes": {
+            "pace": 81,
+            "shooting": 82,
+            "passing": 83,
+            "dribbling": 84,
+            "defending": 82,
+            "physical": 85
+        }
+    },
+    {
+        "name": "João Félix",
+        "position": "Forward",
+        "overall_rating": 87,
+        "nationality": "Portugal",
+        "weight": "152 lbs",
+        "height": "5'11\"",
+        "skill_moves": 5,
+        "attributes": {
+            "pace": 85,
+            "shooting": 86,
+            "passing": 83,
+            "dribbling": 89,
+            "defending": 40,
+            "physical": 75
+        }
+    }
+]
