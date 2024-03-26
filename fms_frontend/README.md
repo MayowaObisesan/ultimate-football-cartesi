@@ -22,12 +22,3 @@ You may also see any lint errors in the console.
 ### Reading outputs
 
 Cartesi rollups framework uses GraphQL server in the node to help developers query outputs of a dapp. This project uses Apollo graphql client.
-
-### Components
-
-Ultimate football front-end is divided into 3 main components.
-
-1. `Single Player Mode` - the single player mode. i.e., the game mode played against the computer.
-2. `VS Player Mode (Dual Player Mode)` - Contains the code that powers the dual game mode, i.e., the game mode played against other players.
-
-This project is a work in progress.
