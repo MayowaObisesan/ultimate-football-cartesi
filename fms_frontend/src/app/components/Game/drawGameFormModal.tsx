@@ -3,10 +3,57 @@
 import * as AlertDialog from "@radix-ui/react-alert-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { useRef, useState } from "react";
+import { GameTypeProps } from "./Game";
+import { usePeepsContext } from "../../context";
+import { useRollups } from "../../useRollups";
+import { ethers } from "ethers";
+import { defaultDappAddress } from "../../utils/constants";
+import toast from "react-hot-toast";
 
-export const MatchDrawnModal = () => {
+export const MatchDrawnModal: React.FC<GameTypeProps> = ({ gameType }) => {
   const [open, setOpen] = useState<boolean>(true);
   const victoryModalCloseButton = useRef(null);
+  const { baseDappAddress, currentMatchIds } = usePeepsContext();
+  const rollups = useRollups(baseDappAddress);
+
+  const addInput = async (str: string) => {
+    if (rollups) {
+      try {
+        let payload = ethers.utils.toUtf8Bytes(str);
+        // if (hexInput) {
+        //   payload = ethers.utils.arrayify(str);
+        // }
+        return await rollups.inputContract.addInput(
+          defaultDappAddress,
+          payload
+        );
+      } catch (e) {
+        console.log(`${e}`);
+      }
+    }
+  };
+
+  const handlePayForDraw = async () => {
+    // construct the json payload to send to addInput
+    const jsonPayload = {
+      method: "pay_for_draw",
+      data: {
+        match_id: currentMatchIds.singleMatchId,
+      },
+    };
+
+    const res = await addInput(JSON.stringify(jsonPayload));
+    const receipt = await res?.wait(1);
+    const event = receipt?.events?.find((e) => e.event === "InputAdded");
+
+    if (event?.event === "InputAdded") {
+      toast.success("Payment complete");
+    }
+  };
+
+  if (gameType === "duel") {
+    handlePayForDraw();
+  }
 
   return (
     <AlertDialog.Root open={open} onOpenChange={setOpen}>

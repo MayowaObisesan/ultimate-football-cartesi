@@ -22,6 +22,7 @@
         "apexcharts": "^3.45.2",
         "buffer": "^6.0.3",
         "cacheable-request": "^10.2.7",
+        "classnames": "^2.5.1",
         "crypto-js": "^4.2.0",
         "d3": "^7.8.5",
         "ethers": "5.7.2",

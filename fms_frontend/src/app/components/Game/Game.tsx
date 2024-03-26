@@ -38,6 +38,7 @@ import { JoinGameFormModal } from "./JoinGameFormModal";
 import { VictoryModal } from "./VictoryModal";
 import { LossModal } from "./LossGameFormModal";
 import { MatchDrawnModal } from "./drawGameFormModal";
+import { GameButton } from "../Button/Button";
 
 export interface GameTypeProps {
   gameType?: "single" | "duel" | "duelBet";
@@ -1191,7 +1192,7 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
       <h3 id="red">Liverpool</h3>
       <div id="home">{homeTeam}</div> */}
 
-      <section className="left-content relative w-3/12 bg-base-100 h-screen">
+      <section className="left-content relative w-3/12 bg-base-100/20 h-screen">
         <Link href={"/"} className="block text-3xl text-base-content p-8">
           <div className="font-bold">Ultimate</div>
           <span className="block text-5xl">Football</span>
@@ -1222,14 +1223,14 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
           </button>
         </section> */}
         <div className="mt-8 px-8">
-          <button
+          <GameButton
             type="button"
             onClick={openPlayerSelectionPanel}
-            className="btn flex flex-row gap-x-6"
+            classes="btn btn-wide flex flex-row justify-start text-left gap-x-8"
           >
             <LucideUsers />
-            Select Players
-          </button>
+            <span className="flex-1 shrink-0 pl-4">Select Players</span>
+          </GameButton>
         </div>
         {gameType === "duel" && (
           // <div className="mt-8 px-8">
@@ -1258,14 +1259,14 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
           <JoinGameFormModal gameType={gameType} />
         )}
         <div className="mt-8 px-8">
-          <button
+          <GameButton
             type="button"
             onClick={openPlayerSelectionPanel}
-            className="btn flex flex-row gap-x-6"
+            classes="btn btn-wide flex flex-row justify-start gap-x-6"
           >
             <LucideUserSearch />
-            Show Selected Players
-          </button>
+            <span className="flex-1 shrink-0 pl-4">Show Selected Players</span>
+          </GameButton>
         </div>
         {/* <button type="button" onClick={() => updateReloadNotices(true)}>
           reload notices
@@ -1289,24 +1290,35 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
         <canvas id="myCanvas" width="560" height="840" ref={canvas}></canvas>
       </div>
 
-      <section>
+      <section className="">
         {showPlayerSelectionPanel && (
           <>
             <PlayerSelection noticesData={simulationResult} />
             <section className="player-action-container absolute top-4 right-0 z-40 bg-base-100 overflow-y-auto w-3/12 h-[96%] mr-4 px-2 rounded-box">
               <div className="w-full">
-                <div className="hidden">
+                {/* <div className="hidden">
                   <span>You cannot modify your players beyond this point</span>
                   <span>Click the button below to proceed</span>
-                  <button
-                    type="button"
-                    className="btn btn-lg btn-wide mx-auto"
-                    onClick={handleSimulateMatchAgainstComputer}
-                    disabled={selectedPlayerList.length !== 11}
-                  >
-                    Register your players
-                  </button>
-                </div>
+                  {gameType === "single" ? (
+                    <button
+                      type="button"
+                      className="btn btn-lg btn-wide mx-auto"
+                      onClick={handleSimulateMatchAgainstComputer}
+                      disabled={selectedPlayerList.length !== 11}
+                    >
+                      Register your players
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      className="btn btn-lg btn-wide mx-auto"
+                      onClick={closePlayerSelectionPanel}
+                      disabled={selectedPlayerList.length !== 11}
+                    >
+                      Create or Join a Match
+                    </button>
+                  )}
+                </div> */}
               </div>
 
               {selectedPlayerList.length < 1 && (
@@ -1341,14 +1353,23 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
               </div>
 
               <div className="relative mx-auto flex flex-col items-center my-4">
-                {selectedPlayerList.length === 11 && (
-                  <button
+                {gameType === "single" && selectedPlayerList.length === 11 ? (
+                  <GameButton
                     type="button"
-                    className="btn btn-lg btn-success btn-wide rounded-box"
+                    classes="btn btn-lg success btn-wide rounded-box"
                     onClick={handleSimulateMatchAgainstComputer}
                     disabled={selectedPlayerList.length !== 11}
                   >
                     Register your players
+                  </GameButton>
+                ) : (
+                  <button
+                    type="button"
+                    className="btn btn-lg btn-wide mx-auto rounded-box"
+                    onClick={closePlayerSelectionPanel}
+                    disabled={selectedPlayerList.length !== 11}
+                  >
+                    Create or Join a Match
                   </button>
                 )}
                 {/* {
@@ -1484,9 +1505,9 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
       <div className="z-10 w-3/12">
         <div className="flex flex-col items-end justify-end px-2 py-2">
           {gameType === "single" && (
-            <button
+            <GameButton
               type="button"
-              className="btn btn-success btn-wide text-success-content"
+              classes="btn success btn-wide disabled:opacity-20"
               onClick={init}
               disabled={
                 selectedPlayerList.length !== 11 ||
@@ -1494,14 +1515,14 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
               }
             >
               Start Match
-            </button>
+            </GameButton>
           )}
           {gameType === "single" && gameWinStatus === "win" ? (
-            <VictoryModal />
+            <VictoryModal gameType={gameType} />
           ) : gameWinStatus === "loss" ? (
-            <LossModal />
+            <LossModal gameType={gameType} />
           ) : gameWinStatus === "draw" ? (
-            <MatchDrawnModal />
+            <MatchDrawnModal gameType={gameType} />
           ) : null}
           <div
             id="timer"
@@ -1535,58 +1556,78 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
 
       <div
         id="game-marque"
-        className="marquee fixed bottom-0 left-0 flex flex-row gap-x-8 w-full p-4 bg-slat-950 bg-base-200"
+        className="marquee fixed bottom-0 left-0 flex flex-row gap-x-8 w-full p-4 bg-slat-950 bg-gradient-to-l from-base-200/50 to-gray-50/5"
       >
-        <div className="font-bold text-lg">
-          <header className="text-sm">Your MatchID:</header>
-          {gameType === "single" && <div>{currentMatchIds.singleMatchId}</div>}
-          {gameType === "duel" && <div>{currentMatchIds.duelMatchId}</div>}
-          {gameType === "duelBet" && (
-            <div>{currentMatchIds.duelBetMatchId}</div>
-          )}
-        </div>
-        {gameType === "single" &&
-          baseNotices &&
-          baseNotices
-            .filter(
-              (it) =>
-                JSON.parse(it.payload).match_id ===
-                currentMatchIds.singleMatchId
-            )
-            .map((eachNotice: any, index: number) => (
-              <>
-                <div className="">
-                  Win Odds: {JSON.parse(eachNotice.payload).home_odds}
-                </div>
-                <div className="">
-                  Loss Odds: {JSON.parse(eachNotice.payload).away_odds}
-                </div>
-                <div className="">
-                  Draw Odds: {JSON.parse(eachNotice.payload).draw_odds}
-                </div>
-              </>
-            ))}
+        <div className="flex-1 shrink-0 flex flex-row items-end px-8">
+          <div className="flex-1 font-bold text-3xl text-center">
+            <header className="text-sm">Current MatchID</header>
+            {gameType === "single" && (
+              <div>{currentMatchIds.singleMatchId}</div>
+            )}
+            {gameType === "duel" && <div>{currentMatchIds.duelMatchId}</div>}
+            {gameType === "duelBet" && (
+              <div>{currentMatchIds.duelBetMatchId}</div>
+            )}
+          </div>
+          {gameType === "single" &&
+            baseNotices &&
+            baseNotices
+              .filter(
+                (it) =>
+                  JSON.parse(it.payload).match_id ===
+                  currentMatchIds.singleMatchId
+              )
+              .map((eachNotice: any, index: number) => (
+                <>
+                  <div className="flex-1 text-center">
+                    Win Odds
+                    <div className="font-bold text-3xl">
+                      {Number(JSON.parse(eachNotice.payload).home_odds).toFixed(
+                        1
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex-1 text-center">
+                    Loss Odds
+                    <div className="font-bold text-3xl">
+                      {Number(JSON.parse(eachNotice.payload).away_odds).toFixed(
+                        1
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex-1 text-center">
+                    Draw Odds
+                    <div className="font-bold text-3xl">
+                      {Number(JSON.parse(eachNotice.payload).draw_odds).toFixed(
+                        1
+                      )}
+                    </div>
+                  </div>
+                </>
+              ))}
 
-        {gameType === "duel" &&
-          baseNotices &&
-          baseNotices
-            .filter(
-              (it) =>
-                JSON.parse(it.payload).match_id === currentMatchIds.duelMatchId
-            )
-            .map((eachNotice: any, index: number) => (
-              <>
-                <div className="">
-                  Team1 Odds: {JSON.parse(eachNotice.payload).home_odds}
-                </div>
-                <div className="">
-                  Team2 Odds: {JSON.parse(eachNotice.payload).away_odds}
-                </div>
-                <div className="">
-                  Draw Odds: {JSON.parse(eachNotice.payload).draw_odds}
-                </div>
-              </>
-            ))}
+          {gameType === "duel" &&
+            baseNotices &&
+            baseNotices
+              .filter(
+                (it) =>
+                  JSON.parse(it.payload).match_id ===
+                  currentMatchIds.duelMatchId
+              )
+              .map((eachNotice: any, index: number) => (
+                <>
+                  <div className="">
+                    Team1 Odds: {JSON.parse(eachNotice.payload).home_odds}
+                  </div>
+                  <div className="">
+                    Team2 Odds: {JSON.parse(eachNotice.payload).away_odds}
+                  </div>
+                  <div className="">
+                    Draw Odds: {JSON.parse(eachNotice.payload).draw_odds}
+                  </div>
+                </>
+              ))}
+        </div>
         <div>
           {/* Team A is looking likely to win according to our statistics ran on
           cartesi machine */}
