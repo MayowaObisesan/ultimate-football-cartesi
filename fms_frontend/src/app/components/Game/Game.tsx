@@ -1362,7 +1362,7 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
                   >
                     Register your players
                   </GameButton>
-                ) : (
+                ) : gameType === "duel" && selectedPlayerList.length === 11 ? (
                   <GameButton
                     type="button"
                     classes="btn btn-lg btn-wide mx-auto rounded-box"
@@ -1371,7 +1371,7 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
                   >
                     Create or Join a Match
                   </GameButton>
-                )}
+                ) : null}
                 {/* {
                   <button
                     type="button"
