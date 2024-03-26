@@ -43,6 +43,8 @@ You can see the list of available players available in the game. The reason for 
 
 <video src="<https://www.loom.com/share/b0906645a2754174b821ae7a9693b94a?sid=aaa3d15e-b733-4b90-8d1d-115b00193f4b>" poster="./fms_frontend/public/img/fms-home.png"></video>
 
+You can view the video by clicking [here](https://www.loom.com/share/b0906645a2754174b821ae7a9693b94a?sid=aaa3d15e-b733-4b90-8d1d-115b00193f4b).
+
 ### SCREENSHOTS OF ULTIMATE FOOTBALL
 
 ![Image](./fms_frontend/public/img/fms-home.png)
