@@ -79,7 +79,7 @@ export default function RootLayout({
         <script src=""></script>
       </head>
       <body
-        className={`${notoSansJP.className} flex flex-col h-dvh overflow-y-auto`}
+        className={`${notoSansJP.className} flex flex-col h-dvh overflow-y-hidden`}
       >
         {/* <section className={"flex flex-col h-screen"}>
           <Navbar />

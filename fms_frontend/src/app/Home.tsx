@@ -112,8 +112,8 @@ export const Home = () => {
                 {GameSections[1].text}
               </h1>
               <span className="text-xl leading-normal">
-                Compete against our football AI in this action-packed 90 seconds
-                mode
+                Compete against other players in the quest for Glory in a 90
+                seconds football thriller
               </span>
             </Link>
           </div>
@@ -137,7 +137,8 @@ export const Home = () => {
                 {GameSections[3].text}
               </h1>
               <span className="text-xl leading-normal">
-                Find Available matches that you can join here
+                Lookup our player database. We have the best of the best
+                players.
               </span>
             </Link>
             <div className="group relative flex flex-row justify-center gap-x-4 cursor-pointer w-[30%] h-[300px]">
