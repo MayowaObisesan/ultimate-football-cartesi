@@ -1363,14 +1363,14 @@ const Game: React.FC<GameTypeProps> = ({ gameType }) => {
                     Register your players
                   </GameButton>
                 ) : (
-                  <button
+                  <GameButton
                     type="button"
-                    className="btn btn-lg btn-wide mx-auto rounded-box"
+                    classes="btn btn-lg btn-wide mx-auto rounded-box"
                     onClick={closePlayerSelectionPanel}
                     disabled={selectedPlayerList.length !== 11}
                   >
                     Create or Join a Match
-                  </button>
+                  </GameButton>
                 )}
                 {/* {
                   <button
