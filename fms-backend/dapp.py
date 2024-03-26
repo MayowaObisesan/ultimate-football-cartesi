@@ -5,7 +5,7 @@ import logging
 import json
 import cartesi_wallet.wallet as Wallet
 from cartesi_wallet.util import hex_to_str, str_to_hex
-from BattleManager import BattleManager
+from MatchManager import MatchManager
 
 logging.basicConfig(level="INFO")
 logger = logging.getLogger(__name__)
@@ -21,7 +21,7 @@ erc20_portal_address = "0x9C21AEb2093C32DDbC53eEF24B873BDCd1aDa1DB"
 erc721_portal_address = "0x237F8DD094C0e47f4236f12b4Fa01d6Dae89fb87"
 
 wallet = Wallet
-battle_manager = BattleManager(wallet)
+match_manager = MatchManager(wallet)
 rollup_address = ""
 
 
@@ -102,15 +102,16 @@ def handle_advance(data):
                 json={"payload": voucher.payload, "destination": voucher.destination},
             )
 
-        if req_json["method"] == "create_challenge":
+        if req_json["method"] == "create_match":
             converted_value = (
                 int(req_json["data"]["amount"])
                 if isinstance(req_json["data"]["amount"], str)
                 and req_json["data"]["amount"].isdigit()
                 else req_json["data"]["amount"]
             )
-            payload = battle_manager.create_challenge(
+            payload = match_manager.create_match(
                 msg_sender.lower(),
+                req_json["data"]["player_data"],
                 req_json["data"]["player_hash"],
                 req_json["data"]["token"].lower(),
                 converted_value,
@@ -121,13 +122,13 @@ def handle_advance(data):
                 json={"payload": str_to_hex(json.dumps(payload))},
             )
 
-        if req_json["method"] == "create_bet_challenge":
+        if req_json["method"] == "create_bet_match":
             converted_value = (
                 int(req_json["amount"])
                 if isinstance(req_json["amount"], str) and req_json["amount"].isdigit()
                 else req_json["amount"]
             )
-            payload = battle_manager.create_bet_challenge(
+            payload = match_manager.create_bet_match(
                 msg_sender.lower(),
                 req_json["fighter_hash"],
                 req_json["token"].lower(),
@@ -139,37 +140,75 @@ def handle_advance(data):
                 json={"payload": str_to_hex(json.dumps(payload))},
             )
 
-        if req_json["method"] == "accept_challenge":
-            payload = battle_manager.accept_challenge(
+        if req_json["method"] == "accept_match":
+            payload = match_manager.accept_match(
                 req_json["data"]["match_id"],
                 msg_sender.lower(),
                 req_json["data"]["player"],
+            )
+            # req_json["data"]["amount"],
+            response = requests.post(
+                rollup_server + "/notice",
+                json={"payload": str_to_hex(json.dumps(payload))},
+            )
+
+        if req_json["method"] == "pay_winner":
+            payload = match_manager.pay_game_winner(
+                req_json["data"]["match_id"],
+                msg_sender.lower(),
             )
             response = requests.post(
                 rollup_server + "/notice",
                 json={"payload": str_to_hex(json.dumps(payload))},
             )
 
-        if req_json["method"] == "start_match":
-            notice_payload, report_payload = battle_manager.start_match(
-                req_json["challenge_id"], msg_sender.lower(), req_json["fighter"]
-            )
-            response = requests.post(
-                rollup_server + "/report",
-                json={"payload": str_to_hex(json.dumps(report_payload))},
+        if req_json["method"] == "pay_for_draw":
+            payload = match_manager.pay_game_drawn(
+                req_json["data"]["match_id"],
             )
             response = requests.post(
                 rollup_server + "/notice",
-                json={"payload": str_to_hex(json.dumps(notice_payload))},
+                json={"payload": str_to_hex(json.dumps(payload))},
             )
+
+        # if req_json["method"] == "start_match":
+        #     notice_payload, report_payload = match_manager.start_match(
+        #         req_json["challenge_id"], msg_sender.lower(), req_json["fighter"]
+        #     )
+        #     response = requests.post(
+        #         rollup_server + "/report",
+        #         json={"payload": str_to_hex(json.dumps(report_payload))},
+        #     )
+        #     response = requests.post(
+        #         rollup_server + "/notice",
+        #         json={"payload": str_to_hex(json.dumps(notice_payload))},
+        #     )
 
         if req_json["method"] == "simulate_match_against_computer":
             print("Inside simulate against computer method")
             print(type(req_json["data"]))
             # print(type(json.loads(req_json["data"])))
             # print(type(req_json["data"]["team1"]))
-            payload = battle_manager.simulate_match_against_computer(
+            payload = match_manager.simulate_match_against_computer(
                 req_json["data"]["team1"], req_json["data"]["match_id"]
+            )
+            # response = requests.post(
+            #     rollup_server + "/report",
+            #     json={"payload": str_to_hex(json.dumps(report_payload))},
+            # )
+            print("Simulation result returned")
+            response = requests.post(
+                rollup_server + "/notice",
+                json={"payload": str_to_hex(json.dumps(payload))},
+            )
+
+        if req_json["method"] == "simulate_match_against_human":
+            print("Inside simulate against human method")
+            print(type(req_json["data"]))
+            payload = match_manager.simulate_match_against_human(
+                req_json["data"]["team1"],
+                req_json["data"]["team2"],
+                req_json["data"]["match_id"],
             )
             # response = requests.post(
             #     rollup_server + "/report",
@@ -211,12 +250,12 @@ def handle_inspect(data):
             }
 
         elif url.path.startswith("battles"):
-            battle_list = battle_manager.list_matches()
+            battle_list = match_manager.list_matches()
             report = {"payload": encode(battle_list)}
 
         elif url.path.startswith("user_battles"):
             user = url.path.replace("user_battles/", "")
-            battle_list = battle_manager.list_user_matches(user)
+            battle_list = match_manager.list_user_matches(user)
             report = {"payload": encode(battle_list)}
 
         response = requests.post(rollup_server + "/report", json=report)

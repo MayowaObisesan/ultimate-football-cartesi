@@ -16,6 +16,8 @@ import { FC, useEffect } from "react";
 import { useConnectWallet, useSetChain } from "@web3-onboard/react";
 import configFile from "./config.json";
 import { usePeepsContext } from "./context";
+import { GameButton } from "./components/Button/Button";
+import { LucideCoins } from "lucide-react";
 
 const config: any = configFile;
 
@@ -51,18 +53,25 @@ export const Network: FC = () => {
   return (
     <div>
       {!wallet && (
-        <button
+        // <button
+        //   type="button"
+        //   className="btn btn-success btn-wide rounded-box capitalize"
+        //   onClick={handleWalletConnect}
+        // >
+        //   {connecting ? "connecting" : "connect wallet"}
+        // </button>
+        <GameButton
           type="button"
-          className="btn btn-success btn-wide rounded-box capitalize"
+          classes="btn btn-ghost btn-wide rounded-box capitalize"
           onClick={handleWalletConnect}
         >
           {connecting ? "connecting" : "connect wallet"}
-        </button>
+        </GameButton>
       )}
       {wallet && (
-        <div className="space-x-3">
+        <div className="space-x-2 flex flex-row gap-x-8">
           {/* <label>Switch Chain</label> */}
-          {settingChain ? (
+          {/* {settingChain ? (
             <span>Switching chain...</span>
           ) : (
             <select
@@ -84,16 +93,41 @@ export const Network: FC = () => {
                 );
               })}
             </select>
-          )}
+          )} */}
           <label htmlFor="id-disconnect-wallet"></label>
-          <button
+          {/* <button
             id={"id-disconnect-wallet"}
             type={"button"}
             onClick={() => disconnect(wallet)}
             className="btn btn-error text-error-content flex-1"
           >
             Disconnect Wallet
-          </button>
+          </button> */}
+          <div className="flex-1">
+            {/* <div className="text-base-content/40">Balance: </div> */}
+            <div className="text-right">
+              <div className="flex flex-row gap-x-4 text-xl font-bold">
+                <LucideCoins />
+                {wallet?.accounts?.length > 0
+                  ? Number(
+                      Object.values(wallet?.accounts[0]?.balance ?? {})
+                    ).toFixed(2)
+                  : 0}{" "}
+              </div>
+              <div className="text-sm font-normal">
+                {wallet?.accounts?.length > 0 &&
+                  Object.keys(wallet?.accounts[0]?.balance ?? {})}
+              </div>
+            </div>
+          </div>
+          <GameButton
+            id={"id-disconnect-wallet"}
+            type={"button"}
+            onClick={() => disconnect(wallet)}
+            classes="btn btn-ghost btn-wide error"
+          >
+            Disconnect Wallet
+          </GameButton>
         </div>
       )}
     </div>

@@ -38,6 +38,8 @@ interface IPeepsContext {
   updateBaseNotices: any;
   reloadNotices: any;
   updateReloadNotices: any;
+  currentMatchIdAmount: any;
+  updateCurrentMatchIdAmount: any;
 }
 
 const PeepsContext = createContext<IPeepsContext>({
@@ -68,6 +70,8 @@ const PeepsContext = createContext<IPeepsContext>({
   updateBaseNotices: null,
   reloadNotices: null,
   updateReloadNotices: null,
+  currentMatchIdAmount: null,
+  updateCurrentMatchIdAmount: null,
 });
 
 /*
@@ -168,6 +172,11 @@ const PeepsProvider: React.FC<PeepsProviderProps<any>> = ({
     duelMatchId: "",
     duelBetMatchId: "",
   });
+  const [currentMatchIdAmount, setCurrentMatchIdAmount] = useState({
+    singleMatchIdAmount: 0,
+    duelMatchIdAmount: 0,
+    duelBetMatchIdAmount: 0,
+  });
   const [baseNotices, setBaseNotices] = useState(null);
   const [reloadNotices, setReloadNotices] = useState<boolean>(false);
   // console.log(userCreated);
@@ -260,6 +269,16 @@ const PeepsProvider: React.FC<PeepsProviderProps<any>> = ({
     console.log(_matchType, "", _matchId);
     setCurrentMatchIds(
       (v) => ((currentMatchIds[_matchType] = _matchId), { ...v })
+    );
+  };
+
+  const updateCurrentMatchIdAmount = (
+    _matchType: string,
+    _matchIdAmount: number
+  ) => {
+    console.log(_matchType, "", _matchIdAmount);
+    setCurrentMatchIdAmount(
+      (v) => ((currentMatchIdAmount[_matchType] = _matchIdAmount), { ...v })
     );
   };
 
@@ -364,6 +383,8 @@ const PeepsProvider: React.FC<PeepsProviderProps<any>> = ({
         updateBaseNotices,
         reloadNotices,
         updateReloadNotices,
+        currentMatchIdAmount,
+        updateCurrentMatchIdAmount,
       }}
     >
       {children}

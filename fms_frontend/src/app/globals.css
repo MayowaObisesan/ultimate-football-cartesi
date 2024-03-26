@@ -36,17 +36,19 @@ text {
     transform: translate(0, -50%);
 } */
 
+
 body {
     margin: 0;
 }
 
 .home-container {
     background: url("../../public/img/gameBg.jpeg") center;
+    /* background: url("../../public/img/khalifa-int-stadium.webp") center; */
     /* background-color: rgba(225, 215, 0, .4); */
-    background-color: rgba(40, 40, 40, .8);
+    background-color: rgba(10, 10, 10, .8);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: hue;
+    background-blend-mode: multiply;
     object-fit: cover;
     object-position: center;
 }

@@ -1,12 +1,11 @@
-# Getting Started with Peeps - A Create React App
+# Getting Started with Ultimate Football Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Install all dependencies and start the application
 
-## Install all dependencies and start  the application
 Inside the root directory of the project, hit the following commands.
 
-```npm install```<br>
-```npm start```
+```yarn```<br>
+```yarn dev```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -26,9 +25,9 @@ Cartesi rollups framework uses GraphQL server in the node to help developers que
 
 ### Components
 
-Peeps front-end is divided into 3 main components that interact with each other. You can find respective .js files in `.src` directory.
-1. `Arcade` - Contains the source code upon which the arcade games would be hosted.
-2. `Profile` - Input form that sends user's data to the blockchain and read by the backend node.
-3. `Wallet` - Contains the code to handle the wallet functionality built on the examples from Cartesi rollups contracts.
+Ultimate football front-end is divided into 3 main components.
 
-This project is a work in progress. Any contributions are highly appreciated. 🙏
+1. `Single Player Mode` - the single player mode. i.e., the game mode played against the computer.
+2. `VS Player Mode (Dual Player Mode)` - Contains the code that powers the dual game mode, i.e., the game mode played against other players.
+
+This project is a work in progress.
